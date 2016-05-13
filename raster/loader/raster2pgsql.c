@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: raster2pgsql.c 12748 2014-07-07 08:57:57Z strk $
  *
  * PostGIS raster loader
  * http://trac.osgeo.org/postgis/wiki/WKTRaster

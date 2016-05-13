@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------
--- $Id$
+-- $Id: geography.sql.in 12890 2014-08-16 05:23:10Z robe $
 --
 -- PostGIS - Spatial Types for PostgreSQL
 -- Copyright 2009 Paul Ramsey <pramsey@cleverelephant.ca>

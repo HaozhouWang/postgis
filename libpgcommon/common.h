@@ -1,5 +1,5 @@
 /**********************************************************************
- * $Id$
+ * $Id: common.h 13134 2014-12-01 08:47:21Z strk $
  *
  * PostGIS - Spatial Types for PostgreSQL
  * http://postgis.net
@@ -13,7 +13,6 @@
 #ifndef PG_LIBCOMMON_H
 #define PG_LIBCOMMON_H
 
-#include "pgsql_compat.h"
 #include "lwgeom_pg.h"
 #include "lwgeom_transform.h"
 

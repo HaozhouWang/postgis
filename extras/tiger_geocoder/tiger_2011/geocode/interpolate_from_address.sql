@@ -1,4 +1,4 @@
---$Id$
+--$Id: interpolate_from_address.sql 11334 2013-05-01 13:48:41Z robe $
 -- interpolate_from_address(local_address, from_address_l, to_address_l, from_address_r, to_address_r, local_road)
 -- This function returns a point along the given geometry (must be linestring)
 -- corresponding to the given address.  If the given address is not within

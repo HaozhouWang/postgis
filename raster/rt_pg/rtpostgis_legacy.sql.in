@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 --
--- $Id$
+-- $Id: rtpostgis_legacy.sql.in 12060 2013-10-28 19:44:03Z dustymugs $
 --
 -- PostGIS Raster - Raster Type for PostGIS
 -- http://trac.osgeo.org/postgis/wiki/WKTRaster

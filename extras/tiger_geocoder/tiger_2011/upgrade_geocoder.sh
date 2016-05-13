@@ -1,5 +1,5 @@
 #!/bin/bash
-# $Id$
+# $Id: upgrade_geocoder.sh 11969 2013-09-23 04:36:25Z robe $
 export PGPORT=5432
 export PGHOST=localhost
 export PGUSER=postgres

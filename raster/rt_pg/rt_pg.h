@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: rt_pg.h 12738 2014-07-06 17:35:36Z dustymugs $
  *
  * WKTRaster - Raster Types for PostGIS
  * http://trac.osgeo.org/postgis/wiki/WKTRaster

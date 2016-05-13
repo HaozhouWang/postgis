@@ -1,5 +1,5 @@
 #############################################################################
-# $Id$ 
+# $Id: Makefile.rt.sample 12060 2013-10-28 19:44:03Z dustymugs $ 
 #
 # Makefile used to simplify creation of PostGIS and WKT Raster enabled
 # database. Run make -f Makefile.rt to see usage message.

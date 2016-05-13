@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 #
-# $Id$
+# $Id: raster2pgsql.py 12060 2013-10-28 19:44:03Z dustymugs $
 #
 # This is a simple utility used to dump GDAL dataset into HEX WKB stream.
 # It's considered as a prototype of raster2pgsql tool planned to develop
@@ -80,7 +80,7 @@ def is_nan(x):
 def parse_command_line():
     """Collects, parses and validates command line arguments."""
 
-    prs = OptionParser(version="%prog $Revision$")
+    prs = OptionParser(version="%prog $Revision: 12060 $")
 
     # Mandatory parameters
     grp0 = OptionGroup(prs, "Source and destination",

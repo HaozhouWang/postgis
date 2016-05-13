@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: rt_api.h 12906 2014-08-22 02:18:46Z robe $
  *
  * WKTRaster - Raster Types for PostGIS
  * http://trac.osgeo.org/postgis/wiki/WKTRaster

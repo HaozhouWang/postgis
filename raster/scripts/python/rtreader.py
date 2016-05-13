@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 #
-# $Id$
+# $Id: rtreader.py 12060 2013-10-28 19:44:03Z dustymugs $
 #
 # A simple driver to read RASTER field data directly from PostGIS/WKTRaster.
 #

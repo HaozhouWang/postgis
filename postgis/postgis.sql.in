@@ -1,6 +1,6 @@
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 --
--- $Id$
+-- $Id: postgis.sql.in 13134 2014-12-01 08:47:21Z strk $
 --
 -- PostGIS - Spatial Types for PostgreSQL
 -- http://postgis.net
@@ -3270,7 +3270,7 @@ CREATE OR REPLACE FUNCTION ST_Collect(geom1 geometry, geom2 geometry)
 	LANGUAGE 'c' IMMUTABLE;
 
 -- Availability: 1.2.2
-CREATE AGGREGATE ST_MemCollect(
+CREATE ORDERED AGGREGATE ST_MemCollect(
 	sfunc = ST_collect,
 	basetype = geometry,
 	stype = geometry
@@ -3283,7 +3283,7 @@ CREATE OR REPLACE FUNCTION ST_Collect(geometry[])
 	LANGUAGE 'c' IMMUTABLE STRICT;
 
 -- Availability: 1.2.2
-CREATE AGGREGATE ST_MemUnion (
+CREATE ORDERED AGGREGATE ST_MemUnion (
 	basetype = geometry,
 	sfunc = ST_Union,
 	stype = geometry
@@ -3348,7 +3348,7 @@ CREATE OR REPLACE FUNCTION pgis_geometry_makeline_finalfn(pgis_abs)
 	LANGUAGE 'c';
 
 -- Availability: 1.2.2
-CREATE AGGREGATE ST_Accum (
+CREATE ORDERED AGGREGATE ST_Accum (
 	sfunc = pgis_geometry_accum_transfn,
 	basetype = geometry,
 	stype = pgis_abs,
@@ -3362,7 +3362,7 @@ CREATE OR REPLACE FUNCTION ST_Union (geometry[])
 	LANGUAGE 'c' IMMUTABLE STRICT;
 
 -- Availability: 1.2.2
-CREATE AGGREGATE ST_Union (
+CREATE ORDERED AGGREGATE ST_Union (
 	basetype = geometry,
 	sfunc = pgis_geometry_accum_transfn,
 	stype = pgis_abs,
@@ -3370,7 +3370,7 @@ CREATE AGGREGATE ST_Union (
 	);
 
 -- Availability: 1.2.2
-CREATE AGGREGATE ST_Collect (
+CREATE ORDERED AGGREGATE ST_Collect (
 	BASETYPE = geometry,
 	SFUNC = pgis_geometry_accum_transfn,
 	STYPE = pgis_abs,
@@ -3378,7 +3378,7 @@ CREATE AGGREGATE ST_Collect (
 	);
 
 -- Availability: 1.2.2
-CREATE AGGREGATE ST_Polygonize (
+CREATE ORDERED AGGREGATE ST_Polygonize (
 	BASETYPE = geometry,
 	SFUNC = pgis_geometry_accum_transfn,
 	STYPE = pgis_abs,
@@ -3386,7 +3386,7 @@ CREATE AGGREGATE ST_Polygonize (
 	);
 
 -- Availability: 1.2.2
-CREATE AGGREGATE ST_MakeLine (
+CREATE ORDERED AGGREGATE ST_MakeLine (
 	BASETYPE = geometry,
 	SFUNC = pgis_geometry_accum_transfn,
 	STYPE = pgis_abs,

@@ -1,6 +1,6 @@
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 -- 
--- $Id$
+-- $Id: postgis_extension_helper_uninstall.sql 12288 2014-03-03 03:01:35Z robe $
 ----
 -- PostGIS - Spatial Types for PostgreSQL
 -- http://postgis.net

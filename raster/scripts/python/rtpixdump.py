@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 #
-# $Id$
+# $Id: rtpixdump.py 12060 2013-10-28 19:44:03Z dustymugs $
 #
 # Brute-force dump of all pixels of all bands in WKT Raster field/row to text.
 # This utility is handy for debugging purposes.
@@ -33,7 +33,7 @@ def logit(msg):
 ###############################################################################
 try:
 
-    prs = OptionParser(version="%prog $Revision$",
+    prs = OptionParser(version="%prog $Revision: 12060 $",
                        usage="%prog -d <DB> -t <TABLE> [-c <COLUMN>]",
                        description="Brute-force dump of all pixel values of WKT Raster dataset")
     prs.add_option("-d", "--db", dest="db", action="store", default=None,

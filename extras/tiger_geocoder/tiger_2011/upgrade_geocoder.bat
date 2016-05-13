@@ -1,4 +1,4 @@
-REM $Id$
+REM $Id: upgrade_geocoder.bat 11969 2013-09-23 04:36:25Z robe $
 set PGPORT=5432
 set PGHOST=localhost
 set PGUSER=postgres

@@ -1,6 +1,6 @@
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 -- 
--- $Id$
+-- $Id: remove_from_extension.sql.in 12288 2014-03-03 03:01:35Z robe $
 ----
 -- PostGIS - Spatial Types for PostgreSQL
 -- http://postgis.net

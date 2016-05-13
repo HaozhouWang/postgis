@@ -1,5 +1,5 @@
 /**********************************************************************
- * $Id$
+ * $Id: shp2pgsql-gui.c 13134 2014-12-01 08:47:21Z strk $
  *
  * PostGIS - Spatial Types for PostgreSQL
  * http://postgis.net
@@ -29,7 +29,7 @@
 
 #include "../liblwgeom/liblwgeom.h" /* for lw_vasprintf */
 
-#define GUI_RCSID "shp2pgsql-gui $Revision$"
+#define GUI_RCSID "shp2pgsql-gui $Revision: 13134 $"
 #define SHAPEFIELDMAXWIDTH 60
 
 static void pgui_log_va(const char *fmt, va_list ap);

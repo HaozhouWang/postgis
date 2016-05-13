@@ -1,5 +1,5 @@
 #!/bin/bash
-# $Id$
+# $Id: create_geocode.sh 11969 2013-09-23 04:36:25Z robe $
 PGPORT=5432
 PGHOST=localhost
 PGUSER=postgres

@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: raster2pgsql.h 12093 2013-11-06 05:12:11Z dustymugs $
  *
  * PostGIS Raster loader
  * http://trac.osgeo.org/postgis/wiki/WKTRaster
@@ -65,7 +65,7 @@
 */
 #define MAXTILESIZE 1073741824
 
-#define RCSID "$Id$"
+#define RCSID "$Id: raster2pgsql.h 12093 2013-11-06 05:12:11Z dustymugs $"
 
 typedef struct raster_loader_config {
 	/* raster filename */

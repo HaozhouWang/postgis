@@ -1,5 +1,5 @@
 /**********************************************************************
- * $Id$
+ * $Id: pgsql2shp-core.h 13134 2014-12-01 08:47:21Z strk $
  *
  * PostGIS - Spatial Types for PostgreSQL
  * http://postgis.net
@@ -29,7 +29,7 @@
 #include "shpcommon.h"
 #include "getopt.h"
 
-#define P2S_RCSID "$Id$"
+#define P2S_RCSID "$Id: pgsql2shp-core.h 13134 2014-12-01 08:47:21Z strk $"
 
 
 /*

@@ -1,5 +1,5 @@
 /**********************************************************************
- * $Id$
+ * $Id: lwgeom_accum.c 13134 2014-12-01 08:47:21Z strk $
  *
  * PostGIS - Spatial Types for PostgreSQL
  * http://postgis.net
@@ -16,6 +16,8 @@
 #include "access/tupmacs.h"
 #include "utils/array.h"
 #include "utils/lsyscache.h"
+
+#include "nodes/execnodes.h" //AggState
 
 #include "../postgis_config.h"
 
@@ -107,9 +109,10 @@ pgis_geometry_accum_transfn(PG_FUNCTION_ARGS)
 
 	if (fcinfo->context && IsA(fcinfo->context, AggState))
 		aggcontext = ((AggState *) fcinfo->context)->aggcontext;
+#if POSTGIS_PGSQL_VERSION > 84
 	else if (fcinfo->context && IsA(fcinfo->context, WindowAggState))
 		aggcontext = ((WindowAggState *) fcinfo->context)->aggcontext;
-
+#endif
 	else
 	{
 		/* cannot be called directly because of dummy-type argument */
@@ -154,9 +157,11 @@ pgis_accum_finalfn(pgis_abs *p, MemoryContext mctx, FunctionCallInfo fcinfo)
 
 	/* cannot be called directly because of internal-type argument */
 	Assert(fcinfo->context &&
-	       (IsA(fcinfo->context, AggState) ||
-	        IsA(fcinfo->context, WindowAggState))
-	       );
+	       (IsA(fcinfo->context, AggState)
+#if POSTGIS_PGSQL_VERSION > 84
+			 || IsA(fcinfo->context, WindowAggState)
+#endif
+	       ));
 
 	state = p->a;
 	dims[0] = state->nelems;

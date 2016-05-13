@@ -21,7 +21,7 @@
  * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA or visit the web at
  * http://www.gnu.org.
  * 
- * $Id$
+ * $Id: GeometryCollection.java 12202 2014-01-30 19:17:00Z pramsey $
  */
 
 package org.postgis;
@@ -34,7 +34,7 @@ import java.sql.SQLException;
  * 
  * @author markus.schaber@logix-tt.com
  * 
- * $Id$
+ * $Id: GeometryCollection.java 12202 2014-01-30 19:17:00Z pramsey $
  */
 
 public class GeometryCollection extends ComposedGeom {

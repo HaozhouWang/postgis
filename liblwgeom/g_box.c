@@ -1,5 +1,5 @@
 /**********************************************************************
- * $Id$
+ * $Id: g_box.c 12901 2014-08-20 14:10:28Z pramsey $
  *
  * PostGIS - Spatial Types for PostgreSQL
  * Copyright 2009 Paul Ramsey <pramsey@cleverelephant.ca>

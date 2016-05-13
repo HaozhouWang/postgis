@@ -1,4 +1,4 @@
---$Id$
+--$Id: tiger_loader_2012.sql 11993 2013-09-30 20:26:04Z robe $
 --
 -- PostGIS - Spatial Types for PostgreSQL
 -- http://www.postgis.org

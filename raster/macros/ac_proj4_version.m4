@@ -1,5 +1,5 @@
 dnl **********************************************************************
-dnl * $Id$
+dnl * $Id: ac_proj4_version.m4 13134 2014-12-01 08:47:21Z strk $
 dnl *
 dnl * PostGIS - Spatial Types for PostgreSQL
 dnl * http://postgis.net

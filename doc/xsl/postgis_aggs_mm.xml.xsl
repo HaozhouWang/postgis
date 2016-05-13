@@ -1,6 +1,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <!-- ********************************************************************
-	 $Id$
+	 $Id: postgis_aggs_mm.xml.xsl 11972 2013-09-23 18:25:33Z robe $
 	 ********************************************************************
 	 Copyright 2010, Regina Obe
 	 License: BSD

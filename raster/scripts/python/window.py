@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 #
-# $Id$
+# $Id: window.py 12060 2013-10-28 19:44:03Z dustymugs $
 #
 # Calculates coordinates of window corners of given raster dataset.
 # It's just a simple helper for testing and debugging WKT Raster.

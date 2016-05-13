@@ -1,6 +1,6 @@
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 --
--- $Id$
+-- $Id: postgis_drop_after.sql 13134 2014-12-01 08:47:21Z strk $
 --
 -- PostGIS - Spatial Types for PostgreSQL
 -- http://postgis.net

@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 #
-# $Id$
+# $Id: pixval.py 12060 2013-10-28 19:44:03Z dustymugs $
 #
 # This is a simple script based on GDAL and used to retrieve value of single raster pixel.
 # It is used in WKTRaster testing to compare raster samples.

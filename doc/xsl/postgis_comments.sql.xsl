@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <!-- ********************************************************************
-     $Id$
+     $Id: postgis_comments.sql.xsl 11389 2013-05-09 19:38:17Z colivier $
      ********************************************************************
 	 Copyright 2008, Regina Obe
      License: BSD
